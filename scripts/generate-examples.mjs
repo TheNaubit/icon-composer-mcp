@@ -7,7 +7,7 @@ import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
 
 const root = fileURLToPath(new URL("..", import.meta.url));
 const workspace = await mkdtemp(join(tmpdir(), "composer-gallery-"));
-const client = new Client({ name: "gallery-builder", version: "1.0.0" });
+const client = new Client({ name: "gallery-builder", version: "1.0.1" });
 const transport = new StdioClientTransport({
   command: process.execPath,
   args: [join(root, "dist/server.js")],

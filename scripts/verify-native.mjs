@@ -8,7 +8,7 @@ import { StdioClientTransport } from "@modelcontextprotocol/client/stdio";
 import { PNG } from "pngjs";
 const root = fileURLToPath(new URL("..", import.meta.url));
 const workspace = await mkdtemp(join(tmpdir(), "composer-native-"));
-const client = new Client({ name: "native-verification", version: "1.0.0" });
+const client = new Client({ name: "native-verification", version: "1.0.1" });
 const env = { ICON_WORKSPACE: workspace };
 if (process.env.ICON_COMPOSER_APP)
   env.ICON_COMPOSER_APP = process.env.ICON_COMPOSER_APP;

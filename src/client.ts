@@ -6,7 +6,7 @@ import { fileURLToPath } from "node:url";
 
 const usage =
   "Usage: icon-composer-client tools | call TOOL [arguments.json]\nSet ICON_WORKSPACE to an absolute directory before running.\n";
-const client = new Client({ name: "icon-composer-client", version: "1.0.0" });
+const client = new Client({ name: "icon-composer-client", version: "1.0.1" });
 try {
   const [command, tool, file, ...extra] = process.argv.slice(2);
   if (
