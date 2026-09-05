@@ -31,8 +31,8 @@ Keep `node_modules`, temporary workspaces, coverage reports and environment file
 
 ## Reporting a vulnerability
 
-A private vulnerability-reporting endpoint is not currently configured. Do not include credentials, private artwork, or exploit details in a public issue. Ask the maintainer of the distribution you received for a private reporting channel before sending sensitive details.
+Report security concerns privately to the repository maintainer. Keep credentials, private artwork, and exploit details out of public issues.
 
-When publishing a GitHub repository, the maintainer should enable **Security → Advisories → Private vulnerability reporting** and replace this paragraph with its verified reporting link. Do not invent a contact address or assume reporting is enabled.
+Reports should include the affected version, operating system, a minimal synthetic reproduction, expected and actual behavior, and impact. Use a disposable workspace for reproductions.
 
-Include the affected version, operating system, minimal synthetic reproduction, expected versus actual behavior, and impact. Test only inside a disposable workspace. The current supported line is 1.x; no response-time guarantee is offered.
+Security fixes are supported for version 1.x.
