@@ -9,7 +9,7 @@ import {
 } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { IconStore } from "../src/store.js";
+import { IconStore } from "@/store";
 const spec = {
   background: "#223344",
   groups: [

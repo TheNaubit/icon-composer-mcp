@@ -2,7 +2,7 @@ import { PNG } from "pngjs";
 import { deflateSync } from "node:zlib";
 import { describe, expect, it } from "vitest";
 
-import { flattenPng, validatePng } from "../src/png.js";
+import { flattenPng, validatePng } from "@/png";
 
 const signature = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 

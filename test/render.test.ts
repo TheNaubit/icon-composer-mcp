@@ -4,10 +4,10 @@ import { tmpdir } from "node:os";
 import { join } from "node:path";
 import { PNG } from "pngjs";
 import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
-import { IconStore } from "../src/store.js";
-import { createServer } from "../src/mcp.js";
-import { renderNative } from "../src/native.js";
-vi.mock("../src/native.js", () => ({
+import { IconStore } from "@/store";
+import { createServer } from "@/mcp";
+import { renderNative } from "@/native";
+vi.mock("@/native", () => ({
   renditions: [
     "Default",
     "Dark",

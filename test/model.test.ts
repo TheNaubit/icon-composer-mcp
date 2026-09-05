@@ -1,6 +1,6 @@
 import { describe, it, expect } from "vitest";
-import { iconSpec, toDocument } from "../src/model.js";
-import { sanitizeSvg } from "../src/svg.js";
+import { iconSpec, toDocument } from "@/model";
+import { sanitizeSvg } from "@/svg";
 const svg =
   '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><circle cx="512" cy="512" r="300" fill="#fff"/></svg>';
 export const fixture = {
@@ -52,7 +52,7 @@ describe("SVG boundary", () => {
 
 it("supports material controls, gradients, placement and alternate PNG artwork", async () => {
   const { PNG } = await import("pngjs");
-  const { assetsFor } = await import("../src/model.js");
+  const { assetsFor } = await import("@/model");
   const png = new PNG({ width: 1, height: 1 });
   png.data.fill(255);
   const data = PNG.sync.write(png).toString("base64");

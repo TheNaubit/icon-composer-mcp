@@ -1,6 +1,6 @@
 import { z } from "zod";
-import { sanitizeSvg } from "./svg.js";
-import { validatePng } from "./png.js";
+import { sanitizeSvg } from "@/svg";
+import { validatePng } from "@/png";
 
 export const iconName = z.string().regex(/^[a-z][a-z0-9-]{0,63}$/);
 const label = z

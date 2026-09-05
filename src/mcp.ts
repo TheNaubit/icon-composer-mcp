@@ -1,8 +1,8 @@
 import { McpServer } from "@modelcontextprotocol/server";
 import { z } from "zod";
-import { IconStore, PublicError } from "./store.js";
-import { iconName, iconSpec } from "./model.js";
-import { nativeStatus, renditions } from "./native.js";
+import { IconStore, PublicError } from "@/store";
+import { iconName, iconSpec } from "@/model";
+import { nativeStatus, renditions } from "@/native";
 
 const textResult = (value: unknown) => ({
   content: [{ type: "text" as const, text: JSON.stringify(value) }],

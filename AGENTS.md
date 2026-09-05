@@ -31,6 +31,7 @@ Run `npm run examples` on macOS when changing native document mapping or example
 
 ## Change rules
 
+- Use extensionless `@/` imports for source modules. Keep the TypeScript and test aliases aligned. `npm run build` type-checks and bundles the two CLI entry points with esbuild.
 - Preserve strict input validation and generic public errors.
 - Never accept a filesystem path from a tool call.
 - Keep `source.json` as the managed specification authority.

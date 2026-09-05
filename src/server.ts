@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/server/stdio";
-import { createServer } from "./mcp.js";
-import { IconStore } from "./store.js";
+import { createServer } from "@/mcp";
+import { IconStore } from "@/store";
 
 try {
   const root = process.env.ICON_WORKSPACE;

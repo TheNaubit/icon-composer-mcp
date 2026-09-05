@@ -2,7 +2,7 @@ import { execFile } from "node:child_process";
 import process from "node:process";
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
-import { nativeStatus, renderNative, renditions } from "../src/native.js";
+import { nativeStatus, renderNative, renditions } from "@/native";
 
 vi.mock("node:child_process", () => ({ execFile: vi.fn() }));
 
