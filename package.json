@@ -1,0 +1,63 @@
+{
+  "name": "icon-composer-kit",
+  "version": "1.0.0",
+  "description": "Local MCP tools for editable Apple Icon Composer documents",
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "bin": {
+    "icon-composer-kit": "dist/server.js",
+    "icon-composer-client": "dist/client.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE",
+    "examples",
+    "docs/images",
+    "src",
+    "SECURITY.md",
+    "AGENTS.md",
+    "CONTRIBUTING.md",
+    "scripts",
+    "test",
+    "tsconfig.json",
+    "vitest.config.ts"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "coverage": "vitest run --coverage",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "check": "npm run format:check && npm run typecheck && npm run coverage && npm run build",
+    "examples": "node scripts/generate-examples.mjs",
+    "pretest": "npm run build",
+    "precoverage": "npm run build",
+    "prepack": "npm run build",
+    "test:native": "npm run build && node scripts/verify-native.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.0.0",
+    "@modelcontextprotocol/server": "2.0.0",
+    "pngjs": "7.0.0",
+    "saxes": "6.0.0",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@types/node": "26.4.1",
+    "@types/pngjs": "6.0.5",
+    "@vitest/coverage-v8": "5.0.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2",
+    "vitest": "5.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheNaubit/icon-composer-mcp.git"
+  },
+  "homepage": "https://github.com/TheNaubit/icon-composer-mcp#readme"
+}

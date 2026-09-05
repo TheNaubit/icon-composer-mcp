@@ -1,0 +1,39 @@
+{
+  "name": "prism",
+  "spec": {
+    "background": {
+      "top": "#562f91",
+      "bottom": "#221044"
+    },
+    "darkBackground": {
+      "top": "#201036",
+      "bottom": "#0f0a1b"
+    },
+    "groups": [
+      {
+        "name": "Highlight",
+        "layers": [
+          {
+            "name": "Highlight",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><path d=\"M512 264 L562 460 L760 512 L562 564 L512 760 L462 564 L264 512 L462 460 Z\" fill=\"#fff5e6\"/></svg>",
+            "darkSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><path d=\"M512 264 L562 460 L760 512 L562 564 L512 760 L462 564 L264 512 L462 460 Z\" fill=\"#d7bde9\"/></svg>"
+          }
+        ]
+      },
+      {
+        "name": "Crystal",
+        "specular": true,
+        "translucency": 0.16,
+        "shadow": "neutral",
+        "shadowOpacity": 0.18,
+        "layers": [
+          {
+            "name": "Crystal",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><path d=\"M512 146 L860 512 L512 878 L164 512 Z\" fill=\"#c0a6ee\"/></svg>",
+            "glass": true
+          }
+        ]
+      }
+    ]
+  }
+}

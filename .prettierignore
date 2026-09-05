@@ -1,0 +1,7 @@
+node_modules
+dist
+coverage
+docs/images
+examples/*.icon
+workspace
+package-lock.json

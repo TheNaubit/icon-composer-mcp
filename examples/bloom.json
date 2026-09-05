@@ -1,0 +1,58 @@
+{
+  "name": "bloom",
+  "spec": {
+    "background": {
+      "top": "#bfeeda",
+      "bottom": "#69bba4"
+    },
+    "darkBackground": {
+      "top": "#183d39",
+      "bottom": "#092723"
+    },
+    "groups": [
+      {
+        "name": "Seed",
+        "layers": [
+          {
+            "name": "Seed",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><circle cx=\"512\" cy=\"523\" r=\"70\" fill=\"#fff2c4\"/></svg>"
+          }
+        ]
+      },
+      {
+        "name": "Petals",
+        "specular": true,
+        "translucency": 0.1,
+        "shadow": "neutral",
+        "shadowOpacity": 0.12,
+        "layers": [
+          {
+            "name": "Petal 1",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><ellipse cx=\"512\" cy=\"344\" rx=\"109\" ry=\"181\" transform=\"rotate(0 512 512)\" fill=\"#f5ffed\"/></svg>",
+            "glass": true
+          },
+          {
+            "name": "Petal 2",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><ellipse cx=\"512\" cy=\"344\" rx=\"109\" ry=\"181\" transform=\"rotate(72 512 512)\" fill=\"#f5ffed\"/></svg>",
+            "glass": true
+          },
+          {
+            "name": "Petal 3",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><ellipse cx=\"512\" cy=\"344\" rx=\"109\" ry=\"181\" transform=\"rotate(144 512 512)\" fill=\"#f5ffed\"/></svg>",
+            "glass": true
+          },
+          {
+            "name": "Petal 4",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><ellipse cx=\"512\" cy=\"344\" rx=\"109\" ry=\"181\" transform=\"rotate(216 512 512)\" fill=\"#f5ffed\"/></svg>",
+            "glass": true
+          },
+          {
+            "name": "Petal 5",
+            "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1024 1024\" width=\"1024\" height=\"1024\"><ellipse cx=\"512\" cy=\"344\" rx=\"109\" ry=\"181\" transform=\"rotate(288 512 512)\" fill=\"#f5ffed\"/></svg>",
+            "glass": true
+          }
+        ]
+      }
+    ]
+  }
+}
