@@ -27,7 +27,7 @@
     "vitest.config.ts"
   ],
   "scripts": {
-    "build": "tsc",
+    "build": "npm run typecheck && node scripts/build.mjs",
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "coverage": "vitest run --coverage",
@@ -51,6 +51,7 @@
     "@types/node": "26.4.1",
     "@types/pngjs": "6.0.5",
     "@vitest/coverage-v8": "5.0.0",
+    "esbuild": "0.28.2",
     "prettier": "3.9.6",
     "typescript": "7.0.2",
     "vitest": "5.0.0"

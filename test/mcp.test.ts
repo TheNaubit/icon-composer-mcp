@@ -3,9 +3,9 @@ import { Client, InMemoryTransport } from "@modelcontextprotocol/client";
 import { mkdtemp, rm } from "node:fs/promises";
 import { tmpdir } from "node:os";
 import { join } from "node:path";
-import { createServer } from "../src/mcp.js";
-import { IconStore } from "../src/store.js";
-vi.mock("../src/native.js", () => ({
+import { createServer } from "@/mcp";
+import { IconStore } from "@/store";
+vi.mock("@/native", () => ({
   renditions: [
     "Default",
     "Dark",

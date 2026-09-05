@@ -1,5 +1,5 @@
 import { isDeepStrictEqual } from "node:util";
-import { flattenPng } from "./png.js";
+import { flattenPng } from "@/png";
 import { constants } from "node:fs";
 import {
   mkdir,
@@ -20,8 +20,8 @@ import {
   assetsFor,
   toDocument,
   type IconSpec,
-} from "./model.js";
-import { renderNative, type NativeRenderOptions } from "./native.js";
+} from "@/model";
+import { renderNative, type NativeRenderOptions } from "@/native";
 
 const MAX_SOURCE = 2 * 1024 * 1024;
 const revision = (spec: IconSpec) =>

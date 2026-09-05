@@ -402,6 +402,8 @@ MCP host or included CLI client
   → verified Apple ictool → bounded PNG response
 ```
 
+The build type-checks with TypeScript and bundles the server and CLI with esbuild into `dist/server.js` and `dist/client.js`. Source imports use the extensionless `@/` alias for `src/`; the build resolves these imports. Runtime dependencies remain installed through npm.
+
 The runtime uses the official MCP server/client packages, Zod, Saxes, and PNGJS. There is no shell command builder, HTTP server, database, background service, or bundled Apple binary. Source modules, tests and reproducible examples are included in this repository; [`AGENTS.md`](AGENTS.md) maps their responsibilities.
 
 ## Contributing
