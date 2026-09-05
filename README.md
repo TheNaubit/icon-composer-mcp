@@ -151,7 +151,7 @@ Put this in `.claude-plugin/plugin.json`:
 ```json
 {
   "name": "icon-composer-local",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Local Apple Icon Composer tools"
 }
 ```

@@ -8,7 +8,7 @@ const textResult = (value: unknown) => ({
   content: [{ type: "text" as const, text: JSON.stringify(value) }],
 });
 export function createServer(store: IconStore) {
-  const server = new McpServer({ name: "icon-composer-kit", version: "1.0.0" });
+  const server = new McpServer({ name: "icon-composer-kit", version: "1.0.1" });
   let busy = false;
   let windowStart = Date.now();
   let calls = 0;
