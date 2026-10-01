@@ -48,7 +48,7 @@
     "zod": "4.5.4"
   },
   "devDependencies": {
-    "@types/node": "26.4.1",
+    "@types/node": "26.6.3",
     "@types/pngjs": "6.0.5",
     "@vitest/coverage-v8": "5.0.0",
     "esbuild": "0.28.2",
