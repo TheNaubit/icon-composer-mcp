@@ -41,7 +41,7 @@
     "test:native": "npm run build && node scripts/verify-native.mjs"
   },
   "dependencies": {
-    "@modelcontextprotocol/client": "2.0.0",
+    "@modelcontextprotocol/client": "2.2.0",
     "@modelcontextprotocol/server": "2.0.0",
     "pngjs": "7.0.0",
     "saxes": "6.0.0",
